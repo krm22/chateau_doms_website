@@ -1,143 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
 
-  <title>Château Doms</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i" rel="stylesheet">
+
+    <title>Château Doms</title>
 </head>
 
-<body>
-  <header>
-    <div class="navbar navbar-default navbar-fixed-top"> <!-- Mettre navbar-inverse pour colorer en noir -->
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"> Château Doms </a>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="120">
+
+    <!-- Start of nav -->
+
+    <nav class="navbar navbar-dark bg-faded navbar-fixed-top" style="background-color: rgb(141, 0, 81);">
+
+        <ul class="nav navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#domaine">Le domaine</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#terroir">Le terroir</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#chais">Les chais</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#vins">Les vins</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn" data-toggle="modal" data-target="#contact" href="">Contact</a>
+            </li>
+        </ul>
+
+        <a class="navbar-brand pull-sm-right m-r-o hidden-xs-down " href="#">Château Doms</a>
+        <!-- Brand name to the right -->
+
+    </nav>
+
+    <!-- End of nav -->
+
+    <div class="container entete">
+        <!-- closing of first <div class="row"> --></div>
+    <div class="parallax">
+        <!-- background="presentation" -->
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid domaine" id="domaine">
+        <div class="container text-center p-t-2">
+            <h1 class="display-2 p-t-2"> Le domaine </h1>
+            <p class="lead p-t-3"> Passionnées par la vigne et le vin, les femmes du Château Doms sont viticultrices de mère en fille depuis cinq générations. Aujourd’hui, Hélène Durand et sa fille Amélie cultivent les vignes dans la tradition et élaborent des vins féminins.
+                La maison familiale, une magnifique chartreuse datant du XVII° siècle, qui fut jadis un monastère constitue le centre du domaine. Le vignoble de 28 hectares s’étend tout autour, sur une croupe graveleuse jouissant d’une exposition exceptionnelle
+                pour la culture de la vigne. Le Château Doms se situe au cœur de la région des Graves, au sud-est de Bordeaux. Le sol caillouteux et sableux de cette région, associé aux cépages bordelais Merlot et Cabernet Sauvignon pour les vins rouges
+                et Sauvignon et Sémillon pour les vins blancs caractérisent le précieux terroir de cette prestigieuse AOC du vignoble de Bordeaux. Les vins des Graves, particulièrement ceux du Château Doms sont des vins de femmes vins de caractère et
+                d’élégance.
+            </p>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-
-            <li><a href="#domaine"> Le domaine </a></li>
-            <li><a href="#terroir"> Le terroir </a></li>
-            <li><a href="#chais"> Les chais </a></li>
-            <li><a href="#vins"> Les vins </a></li>
-            <li><a href="#contact"> Contact </a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </div>
-  </header>
 
-  <div class="container-fluid entete" >
-
-    <div class="parallax" > <!-- background="presentation" -->
+    <div class="jumbotron terroir" id="terroir">
+        <div class="container text-center p-t-2">
+            <h1 class="display-2 p-t-2"> Le terroir </h1>
+            <p class="lead p-t-3">Le terroir confère à un vin son originalité, sa typicité. Cette notion de terroir, très importante en viticulture, regroupe différents facteurs : le sol, le climat, le cépage et le savoir-faire. Le Château Doms se situe au cœur de l’AOC des
+                Graves, une des plus prestigieuses appellations du vignoble de Bordeaux, qui tient son nom de son sol si particulier. En effet, ces graves qui reposent sur un sol sablonneux représentent un réel atout pour la culture de la vigne. Entre
+                autres, en réfléchissant parfaitement le rayonnement solaire, la grave redistribue progressivement la chaleur sur les grappes et contribue ainsi à une meilleure maturation du raisin. Le vignoble se situe sur une croupe graveleuse formée
+                par les dépôts de graves. Il bénéficie ainsi d’une excellente exposition au soleil avec des pentes toujours assez fortes pour assurer un remarquable drainage naturel. Quatre cépages sont plantés sur le vignoble : Merlot et Cabernet Sauvignon
+                pour les vins rouges, et Sémillon et Sauvignon pour les vins blancs. Chacun d’eux présente des caractéristiques propres. Le Cabernet Sauvignon permet d’apporter structure et finesse à un vin, alors que le Merlot surprend par son bouquet
+                d’arômes de fruits mûrs et sa couleur. Afin de superposer les qualités de chacun, les différents cépages sont assemblés. Le savoir-faire est également une donnée indissociable de la qualité et de la typicité d’un vin. Depuis cinq générations,
+                la connaissance du terroir et du métier se transmet, de mère en fille. Les vins sont élaborés dans le respect de la tradition avec une évolution permanente au fil des générations.
+            </p>
+        </div>
     </div>
-    <div class="container">
-    <div class="jumbotron domaine" id="domaine">
-      <section>
-        <h1 > Le domaine </h1>
-        <p> Passionnées par la vigne et le vin, les femmes du Château Doms sont viticultrices de mère en fille depuis cinq générations. Aujourd’hui, Hélène Durand et sa fille Amélie cultivent les vignes dans la tradition et élaborent des vins féminins.
-          La maison familiale, une magnifique chartreuse datant du XVII° siècle, qui fut jadis un monastère constitue le centre du domaine. Le vignoble de 28 hectares s’étend tout autour, sur une croupe graveleuse jouissant d’une exposition exceptionnelle pour la culture de la vigne.
-          Le Château Doms se situe au cœur de la région des Graves, au sud-est de Bordeaux. Le sol caillouteux et sableux de cette région, associé aux cépages bordelais Merlot et Cabernet Sauvignon pour les vins rouges et Sauvignon et Sémillon pour les vins blancs caractérisent le précieux terroir de cette prestigieuse AOC du vignoble de Bordeaux.
-          Les vins des Graves, particulièrement ceux du Château Doms sont des vins de femmes : vins de caractère et d’élégance.</p>
-        </section>
-      </div>
-      <div class="jumbotron terroir" id="terroir">
-        <section>
-          <h1> Le terroir </h1>
-          <p> Le terroir confère à un vin son originalité, sa typicité. Cette notion de terroir, très importante en viticulture, regroupe différents facteurs : le sol, le climat, le cépage et le savoir-faire.
-            Le Château Doms se situe au cœur de l’AOC des Graves, une des plus prestigieuses appellations du vignoble de Bordeaux, qui tient son nom de son sol si particulier. En effet, ces graves qui reposent sur un sol sablonneux représentent un réel atout pour la culture de la vigne. Entre autres, en réfléchissant parfaitement le rayonnement solaire, la grave redistribue progressivement la chaleur sur les grappes et contribue ainsi à une meilleure maturation du raisin.
-            Le vignoble se situe sur une croupe graveleuse formée par les dépôts de graves. Il bénéficie ainsi d’une excellente exposition au soleil avec des pentes toujours assez fortes pour assurer un remarquable drainage naturel.
-            Quatre cépages sont plantés sur le vignoble : Merlot et Cabernet Sauvignon pour les vins rouges, et Sémillon et Sauvignon pour les vins blancs. Chacun d’eux présente des caractéristiques propres. Le Cabernet Sauvignon permet d’apporter structure et finesse à un vin, alors que le Merlot surprend par son bouquet d’arômes de fruits mûrs et sa couleur. Afin de superposer les qualités de chacun, les différents cépages sont assemblés.
-            Le savoir-faire est également une donnée indissociable de la qualité et de la typicité d’un vin. Depuis cinq générations, la connaissance du terroir et du métier se transmet, de mère en fille. Les vins sont élaborés dans le respect de la tradition avec une évolution permanente au fil des générations.
-          </p>
-        </section>
-      </div>
-      <div class="jumbotron chais" id="chais">
-        <section>
-          <h1> Les chais  </h1>
+
+
+    <div class="jumbotron chais" id="chais">
+        <div class="container text-center p-t-2">
+            <h1 class="display-2 p-t-2"> Les chais  </h1>
             <h4>  <em> Entre tradition et innovation… </em> </h4>
-            <p>
-            Le château Doms est une magnifique chartreuse datant du XVII° siècle. Une partie de cet ancien monastère a été convertie en chai au XVIII° siècle. Cette bâtisse abrite encore aujourd’hui les chais d’élevage et les chais à barriques. Leurs murs très épais confèrent à ces pièces une température et une hygrométrie naturelles quasiment constantes. Par ailleurs selon Hélène Durand, « travailler dans des chais où plusieurs générations se sont succédées ajoute beaucoup de magie au lieu ».
-            En 1995, un grand projet d’agrandissement et de modernisation a été entrepris : un nouveau chai de vinification et une salle de stockage des bouteilles ont été construits. Afin de préserver les bâtiments existants, une nouvelle aile a été bâtie. Aujourd’hui, le chai du Château Doms est un outil de travail très performant. Il dispose de toutes les innovations techniques (thermorégulation des cuves inox, pressoir à membrane...) nécessaires à l’élaboration de vin de qualité.
-          </p>
-        </section>
-      </div>
-      <div class="jumbotron lesvins" id="vins">
-        <section>
-          <div class="row">
-          <h1> Les vins  </h1>
-          <div class="col-lg-3 col-lg-offset-1 thumbnail">
-            <h4>Le Graves Rouge  </h4>
-            <img src="img/vinrouge.jpg" alt="Vin rouge graves - Château Doms" class="vinrouge">
-            <button class="btn btn-success center-block"> Découvrir </button>
-          </div>
-          <div class="col-lg-3 col-lg-offset-1 thumbnail">
-            <h4>Le Graves Rouge Cuvée Amélie </h4>
-            <img src="img/vinrouge2.jpg" alt="Vin rouge graves cuvée amélie - Château Doms" class="vinrouge2">
-            <button class="btn btn-success center-block"> Découvrir </button>
-          </div>
-          <div class="col-lg-3 col-lg-offset-1 thumbnail">
-            <h4>Le Graves Blanc  </h4>
-            <img src="img/vinblanc.jpg" alt="Vin blanc graves - Château Doms" class="vinblanc">
-            <button class="btn btn-success center-block"> Découvrir </button>
-          </div>
-        </div> <!-- closing of first <div class="row"> -->
-          <div class="row row2">
-            <div class="col-lg-3 col-lg-offset-3 thumbnail">
-              <h4> Le Bordeaux Rouge </h4>
-              <img src="img/bordeauxrouge.jpg" alt="Le Bordeaux Rouge - Château Doms" class="vinbdx">
-              <button class="btn btn-success center-block"> Découvrir </button>
-
-            </div>
-            <div class="col-lg-3 col-lg-offset-1 thumbnail">
-              <h4> Le Rosé de Doms  </h4>
-              <img src="img/vinrose.jpg" alt="Le Rosé de Doms - Château Doms" class="vinrose">
-              <button class="btn btn-success center-block"> Découvrir </button>
-
-            </div>
-
-          </div> <!-- closing of first <div class="row"> -->
-        </section>
-      </div>
-    </div> <!-- closing of <div class="container"> -->
-      <footer class="row footer" id="contact">
-        <div type="button" data-toggle="modal" data-target="#myModal" class="contact">
-          <!-- <div class="thumbnail text-center"> -->
-
-          <h1 class="btn btn-outline-default"> Contact </h1>
-
+            <p class="lead p-t-3">
+                Le château Doms est une magnifique chartreuse datant du XVII° siècle. Une partie de cet ancien monastère a été convertie en chai au XVIII° siècle. Cette bâtisse abrite encore aujourd’hui les chais d’élevage et les chais à barriques. Leurs murs très épais
+                confèrent à ces pièces une température et une hygrométrie naturelles quasiment constantes. Par ailleurs selon Hélène Durand, « travailler dans des chais où plusieurs générations se sont succédées ajoute beaucoup de magie au lieu ». En
+                1995, un grand projet d’agrandissement et de modernisation a été entrepris : un nouveau chai de vinification et une salle de stockage des bouteilles ont été construits. Afin de préserver les bâtiments existants, une nouvelle aile a été
+                bâtie. Aujourd’hui, le chai du Château Doms est un outil de travail très performant. Il dispose de toutes les innovations techniques (thermorégulation des cuves inox, pressoir à membrane...) nécessaires à l’élaboration de vin de qualité.
+            </p>
         </div>
-        </footer>
-      </div><!-- Div of container-fluid -->
-     <!--Div modaltop -->
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center" id="myModalLabel"> Contactez-nous</h4>
-          </div>
-          <div class="modal-body">
-            <img src="#" class="img-responsive center-block">
-            <h4> Formulaire </h4>
-            <button class="btn btn-primary center-block"> Envoyer </button>
-          </div>
-        </div>
-      </div>
     </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-<script src="js/app.js"> </script>
+    <!-- Header for Wines -->
+    <div id="vins">
+        <h1 class="display-2 p-t-3"> Les vins </h1></div>
+
+    <!-- Start of Wine Cards wrapper 1-->
+    <div class="card-deck-wrapper p-b-3 sm-3 ">
+        <div class="card-deck">
+
+            <!-- Wine Card 1 -->
+            <div class="card text-xs-center">
+                <img src="img/vinrouge.jpg" alt="Vin rouge graves - Château Doms" class="card-img-top vinrouge">
+                <div class="card-block">
+                    <h4 class="card-title">Le Graves Rouge </h4>
+                    <button class="btn btn-success center-block" data-toggle="modal" data-target="#legraves"> Découvrir </button>
+                    <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
+                </div>
+            </div>
+            <!-- Wine Card 2 -->
+            <div class="card text-xs-center">
+                <img src="img/vinrouge2.jpg" alt="Vin rouge graves cuvée amélie - Château Doms" class="card-img-top vinrouge2">
+                <div class="card-block">
+                    <h4 class="card-title">Le Graves Rouge Cuvée Amélie </h4>
+                    <button class="btn btn-success center-block" data-toggle="modal" data-target="#legravescuvée" > Découvrir </button>
+                    <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- End of card deck 1-->
+    </div>
+    <!-- End of card deck wrapper 1-->
+
+
+
+    <!-- Start of Wine Cards wrapper 2 -->
+    <div class="card-deck-wrapper p-b-3 sm-3">
+        <div class="card-deck">
+
+
+            <!-- Wine Card 3 -->
+            <div class="card text-xs-center">
+                <img src="img/vinblanc.jpg" alt="Vin blanc graves - Château Doms" class="card-img-top vinblanc">
+                <div class="card-block">
+                    <h4 class="card-title">Le Graves Blanc</h4>
+                    <button class="btn btn-success center-block"> Découvrir </button>
+                    <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
+                </div>
+            </div>
+            <!-- Wine Card 4 -->
+            <div class="card text-xs-center">
+                <img src="img/bordeauxrouge.jpg" alt="Le Bordeaux Rouge - Château Doms" class="card-img-top vinbdx">
+                <div class="card-block">
+                    <h4 class="card-title"> Le Bordeaux Rouge </h4>
+                    <button class="btn btn-success center-block"> Découvrir </button>
+                    <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
+                </div>
+            </div>
+            <!-- Wine Card 5 -->
+            <div class="card text-xs-center">
+                <img src="img/vinrose.jpg" alt="Le Rosé de Doms - Château Doms" class="card-img-top vinrose btn" data-toggle="modal" data-target="#legraves">
+                <div class="card-block">
+                    <h4 class="card-title">Le Rosé de Doms </h4>
+                    <button class="btn btn-success center-block"> Découvrir </button>
+                    <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- End of card deck-->
+    </div>
+    <!-- End of card deck wrapper 2-->
+
+
+    <!-- End of wine cards -->
+
+    <!-- Start of Footer -->
+
+    <nav class="navbar navbar-dark bg-faded" style="background-color: rgb(141, 0, 81);">
+
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">
+                    <p class="footer1">About</p>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="pull-sm-right p-r-0">
+            <p class="footer head font-weight-bold">&copy; 2016 Château Doms &amp; FNC Development Inc </p>
+        </div>
+
+    </nav>
+
+    <!-- End of Footer -->
+
+
+
+    <!--==============================
+         MODALS START HERE
+    ===============================-->
+
+    <!-- Start of button trigger for contact form -->
+
+    <div id="contact" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    <h4 class="modal-title">Contact Château Doms</h4>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Start of contact form -->
+
+                    <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+                        <strong>Hurry!</strong> Early bird registration ends in two days.
+                    </div>
+                    <form>
+                        <h5 class="m-b-2">Basic Info</h5>
+                        <fieldset class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </fieldset>
+                        <fieldset class="form-group has-danger">
+                            <label for="mail" class="form-control-label">Email</label>
+                            <input type="email" class="form-control form-control-danger" id="mail">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="role">Job Role</label>
+                            <select class="c-select form-control" id="role" name="user_role">
+             <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                <option value="front end developer">Front End Developer</option>
+                <option value="back end developer">Back End Developer</option>
+                <option value="designer">Designer</option>
+                <option value="student">Student</option>
+
+        </select>
+                        </fieldset>
+
+                        <hr class="m-y-2">
+                        <h5 class="m-b-2">Which Topics Interest You Most?</h5>
+
+                        <div class="form-group custom-controls-stacked">
+                            <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">JavaScript Frameworks</span>
+    </label>
+                            <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">JavaScript Librarys</span>
+    </label>
+                            <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Node.js</span>
+    </label>
+                            <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Build Tools</span>
+    </label>
+                            <label class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Es 2015</span>
+    </label>
+                        </div>
+
+                        <hr class="m-b-2">
+
+                        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                    </form>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--/ End of contact  modal form-->
+
+    <!--button trigger for La Graves Rouge-->
+
+    <div id="legraves" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    <h4 class="modal-title">Le Grave Rouge</h4>
+
+                </div>
+                <div class="modal-body">
+
+
+                <!-- End of button trigger for La Graves Rouge-->
+
+                <form>
+                    <img src="img/vinrouge.jpg" class="img-fluid center-block">
+                    <hr class="m-b-2">
+                    <h5 class="m-b-2">Payment Info</h5>
+
+                    <div class="row">
+                        <div class="col-lg-6 form-group has-success">
+                            <label class="from-control-label p-l-0" for="cc-num">Card Number:</label>
+                            <input class="form-control form-control-success" id="cc-num" type="text">
+                        </div>
+
+                        <div class="col-lg-3 form-group">
+                            <label for="zip">Code Postal:</label>
+                            <input class="form-control" id="zip" type="text">
+                        </div>
+
+                        <div class="col-lg-3 form-group">
+                            <label for="cvv">CVV:</label>
+                            <input class="form-control" id="cvv" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-12">Expiration Date:</label>
+
+                        <div class="col-lg-8 form-group">
+                            <select class="c-select form-control" id="exp-month">
+        <option value="1">1 - January</option>
+        <option value="2">2 - February</option>
+        <option value="3">3 - March</option>
+        <option value="4">4 - April</option>
+        <option value="5">5 - May</option>
+        <option value="6">6 - June</option>
+        <option value="7">7 - July</option>
+        <option value="8">8 - August</option>
+        <option value="9">9 - September</option>
+        <option value="10">10 - October</option>
+        <option value="11">11 - November</option>
+        <option value="12">12 - December</option>
+         </select>
+
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <select class="custom-select form-control" id="exp-year">
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+        </select>
+                        </div>
+                    </div>
+                </form>
+
+                <!--/registration form-->
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--button trigger for La Graves Rouge Cuvée Amélie -->
+
+    <div id="legravescuvée" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    <h4 class="modal-title">Le Graves Rouge Cuvée Amélie</h4>
+
+                </div>
+                <div class="modal-body">
+
+
+                <!-- End of button trigger for La Graves Rouge Cuvée Amélie-->
+
+                <form>
+                    <img src="img/vinrouge2.jpg" class="img-fluid center-block">
+                    <hr class="m-b-2">
+                    <h5 class="m-b-2">Payment Info</h5>
+
+                    <div class="row">
+                        <div class="col-lg-6 form-group has-success">
+                            <label class="from-control-label p-l-0" for="cc-num">Card Number:</label>
+                            <input class="form-control form-control-success" id="c-num" type="text">
+                        </div>
+
+                        <div class="col-lg-3 form-group">
+                            <label for="zip">Code Postal:</label>
+                            <input class="form-control" id="post" type="text">
+                        </div>
+
+                        <div class="col-lg-3 form-group">
+                            <label for="cvv">CVV:</label>
+                            <input class="form-control" id="secure" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-lg-12">Expiration Date:</label>
+
+                        <div class="col-lg-8 form-group">
+                            <select class="c-select form-control" id="ex-month">
+        <option value="1">1 - January</option>
+        <option value="2">2 - February</option>
+        <option value="3">3 - March</option>
+        <option value="4">4 - April</option>
+        <option value="5">5 - May</option>
+        <option value="6">6 - June</option>
+        <option value="7">7 - July</option>
+        <option value="8">8 - August</option>
+        <option value="9">9 - September</option>
+        <option value="10">10 - October</option>
+        <option value="11">11 - November</option>
+        <option value="12">12 - December</option>
+         </select>
+
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <select class="custom-select form-control" id="ex date">
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+        </select>
+                        </div>
+                    </div>
+                </form>
+
+                <!--/registration form-->
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="/parallax.js/parallax.min.js">
+    </script>
+    <script src="js/app.js">
+    </script>
 </body>
+
 </html>
