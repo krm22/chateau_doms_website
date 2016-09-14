@@ -1,41 +1,46 @@
-    body {
+  /*  body {
         background: url('/img/vignes.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Playfair Display', serif;
+    } */
+
+    #intro {
+        background: url(/img/vignes.jpg) 50%  65% fixed;
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        padding: 300px 0;
     }
 
     .navbar {
         height: 10%;
     }
 
-     .navbar-brand{
+    .navbar-brand {
         font-size: 2em;
         color: #989494;
     }
 
-    .navbar li a{
+    .navbar li a {
         font-size: 1.8em;
-}
-
-
+    }
+    /*
     .entete {
         padding-bottom: 400px;
     }
 
     .parallax {
-        /* The image used */
         background-image: url("");
-        /* Set a specific height */
         height: 500px;
-        /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
+    } */
 
     .terroir {
         background-image: url("/img/terroir1.jpg");
@@ -59,7 +64,7 @@
     }
 
     .lesvins {
-        background:white;
+        background: white;
     }
 
     .lesvinsh1 {
@@ -95,7 +100,6 @@
     .chais {
         background: url('/img/chais1.jpg');
         color: white;
-
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
