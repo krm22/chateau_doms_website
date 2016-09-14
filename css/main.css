@@ -6,33 +6,38 @@
         background-size: cover;
         font-family: 'Playfair Display', serif;
     } */
-
-    #intro {
-        background: url(/img/vignes.jpg) 50%  65% fixed;
+  /*  #intro {
+        background: url(/img/vignes.jpg) 50%  0 fixed;
         height: auto;
         margin: 0 auto;
         width: 100%;
         position: relative;
         padding: 300px 0;
-    }
+    } */
 
-    .navbar {
-        height: 10%;
-    }
+  #intro {
+      background-image: url(/img/vignes.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: rgb(141, 0, 81);
+      height: 760px;
+  }
 
-    .navbar-brand {
-        font-size: 2em;
-        color: #989494;
-    }
+  .navbar {
+      height: 10%;
+  }
 
-    .navbar li a {
-        font-size: 1.8em;
-    }
-    /*
-    .entete {
-        padding-bottom: 400px;
-    }
+  .navbar-brand {
+      font-size: 2em;
+      color: #989494;
+  }
 
+  .navbar li a {
+      font-size: 1.8em;
+  }
+  /*
     .parallax {
         background-image: url("");
         height: 500px;
@@ -42,70 +47,78 @@
         background-size: cover;
     } */
 
-    .terroir {
-        background-image: url("/img/terroir1.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: rgb(141, 0, 81);
-    }
+  .terroir {
+      background-image: url(/img/bottle.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: rgb(141, 0, 81);
+      height: 400px;
+  }
 
-    .terroirh1 {
-        margin-bottom: 40px;
-    }
+  .terroir p {
+      font-weight: bold;
+  }
 
-    .terroir p {
-        font-weight: bold;
-    }
+  h1, h5, h4 {
+      text-align: center;
+  }
 
-    h1, h5, h4 {
-        text-align: center;
-    }
+  .lesvins {
+      background: white;
+  }
 
-    .lesvins {
-        background: white;
-    }
+  .lesvinsh1 {
+      color: white;
+      margin-bottom: 60px;
+  }
 
-    .lesvinsh1 {
-        color: white;
-        margin-bottom: 60px;
-    }
+  .vinrouge {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
 
-    .vinrouge {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+  .vinrouge2 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
 
-    .vinrouge2 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+  .vinblanc {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
 
-    .vinblanc {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+  .vinbdx {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
 
-    .vinbdx {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+  .vinrose {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
 
-    .vinrose {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+  .chais {
+      background: url('/img/chais1.jpg');
+      color: white;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 
-    .chais {
-        background: url('/img/chais1.jpg');
-        color: white;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .row2 {
+      margin-top: 40px;
+  }
 
-    .row2 {
-        margin-top: 40px;
-    }
+  .jumbotron {
+      margin-bottom: 0;
+  }
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+  .jumbotron {
+    background: rgb(255, 255, 255, 0.5);
+  }
