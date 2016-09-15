@@ -1,80 +1,60 @@
-// add your custom styles here
-// to learn more about SASS, visit sass-lang.com
-body {
-    background: url('/img/vignes.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Playfair Display', serif;
-}
+/*  body {
+      background: url('/img/vignes.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Playfair Display', serif;
+  } */
+/*  #intro {
+      background: url(/img/vignes.jpg) 50%  0 fixed;
+      height: auto;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      padding: 300px 0;
+  } */
 
-/*==========================================
-NAVBAR
-===========================================*/
-
-.navbar {
-    height: 10%;
-}
-
- .navbar-brand{
-    font-size: 2em;
-    color: #989494;
-}
-
-.navbar li a{
-    font-size: 1.8em;
-}
-
-.btncontact{
-  border: transparent;
-}
-
-.navbar-nav {
-	margin:0;
-}
-.navbar-nav>li {
-	float:none;
-    display:inline-block;
-}
-.navbar-nav>li>a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-  /*==========================================
-
-  ===========================================*/
-
-
-
-
-.entete {
-    padding-bottom: 400px;
-}
-
-.parallax {
-    /* The image used */
-    background-image: url("");
-    /* Set a specific height */
-    height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.terroir {
-    background-image: url("/img/terroir1.jpg");
+#intro {
+    background-image: url(/img/vignes.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(141, 0, 81);
+    height: 760px;
 }
 
-.terroirh1 {
-    margin-bottom: 40px;
+.navbar {
+    height: 10%;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    color: #989494;
+}
+
+.navbar li a {
+    font-size: 1.8em;
+}
+/*
+  .parallax {
+      background-image: url("");
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  } */
+
+.terroir {
+    background-image: url(/img/bottle.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(141, 0, 81);
+    height: 400px;
 }
 
 .terroir p {
@@ -86,7 +66,7 @@ h1, h5, h4 {
 }
 
 .lesvins {
-    background:white;
+    background: white;
 }
 
 .lesvinsh1 {
@@ -122,7 +102,6 @@ h1, h5, h4 {
 .chais {
     background: url('/img/chais1.jpg');
     color: white;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,6 +111,18 @@ h1, h5, h4 {
 .row2 {
     margin-top: 40px;
 }
+
+.jumbotron {
+    margin-bottom: 0;
+}
+.card {
+  background-color: transparent;
+  border: none;
+}
+#jumbotron {
+  background: rgb(255, 255, 255, 0.5);
+}
+
 
 
 
