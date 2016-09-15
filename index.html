@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
+<!--    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+  <!--  <link href="css/main.css" rel="stylesheet"> -->
+    <link href="styles/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i" rel="stylesheet">
 
     <title>Château Doms</title>
@@ -17,27 +18,26 @@
     <!-- Start of nav -->
 
     <nav class="navbar navbar-dark bg-faded navbar-fixed-top" style="background-color: rgb(141, 0, 81);">
-
-        <ul class="nav navbar-nav">
+ <ul class="nav navbar-nav">
 
             <li class="nav-item">
                 <a class="nav-link" href="#domaine">Le domaine</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#terroir">Le terroir</a>
+                <a class="nav-link " href="#terroir">Le terroir</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#chais">Les chais</a>
+                <a class="nav-link " href="#chais">Les chais</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#vins">Les vins</a>
+                <a class="nav-link " href="#vins">Les vins</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn" data-toggle="modal" data-target="#contact" href="">Contact</a>
+                <a class="nav-link contact" data-toggle="modal" data-target="#contact" href="">Contact</a>
             </li>
         </ul>
 
-        <a class="navbar-brand pull-sm-right m-r-o hidden-xs-down " href="#">Château Doms</a>
+        <a class="navbar-brand pull-lg-right pull-md-down-left" href="#">Château Doms</a>
         <!-- Brand name to the right -->
 
     </nav>
@@ -131,10 +131,10 @@
 
             <!-- Wine Card 3 -->
             <div class="card text-xs-center">
-                <img src="img/vinblanc.jpg" alt="Vin blanc graves - Château Doms" class="card-img-top vinblanc">
+                <img src="img/vinblanc.jpg" alt="Vin blanc graves - Château Doms" class="card-img-center vinblanc">
                 <div class="card-block">
                     <h4 class="card-title">Le Graves Blanc</h4>
-                    <button class="btn btn-success center-block"> Découvrir </button>
+                    <button class="btn btn-success center-block" data-toggle="modal" data-target="#vinblanc"> Découvrir </button>
                     <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
                 </div>
             </div>
@@ -143,7 +143,7 @@
                 <img src="img/bordeauxrouge.jpg" alt="Le Bordeaux Rouge - Château Doms" class="card-img-top vinbdx">
                 <div class="card-block">
                     <h4 class="card-title"> Le Bordeaux Rouge </h4>
-                    <button class="btn btn-success center-block"> Découvrir </button>
+                    <button class="btn btn-success center-block" data-toggle="modal" data-target="#bordeauxrouge"> Découvrir </button>
                     <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
                 </div>
             </div>
@@ -152,7 +152,7 @@
                 <img src="img/vinrose.jpg" alt="Le Rosé de Doms - Château Doms" class="card-img-top vinrose btn" data-toggle="modal" data-target="#legraves">
                 <div class="card-block">
                     <h4 class="card-title">Le Rosé de Doms </h4>
-                    <button class="btn btn-success center-block"> Découvrir </button>
+                    <button class="btn btn-success center-block" data-toggle="modal" data-target="#rosedoms"> Découvrir </button>
                     <p class="card-text"><small class="text-muted">Last viewed 3 mins ago</small></p>
                 </div>
             </div>
@@ -167,7 +167,7 @@
 
     <!-- Start of Footer -->
 
-    <nav class="navbar navbar-dark bg-faded" style="background-color: rgb(141, 0, 81);">
+    <nav class="navbar navbar-dark bg-faded text-sm-center" style="background-color: rgb(141, 0, 81);">
 
         <ul class="nav navbar-nav">
             <li class="nav-item">
@@ -194,7 +194,7 @@
 
     <!-- Start of button trigger for contact form -->
 
-    <div id="contact" class="modal fade">
+    <div id="contact" class="modal fade text-xs-center">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-info">
@@ -207,64 +207,32 @@
 
                     <!-- Start of contact form -->
 
-                    <div class="alert alert-warning alert-dismissible fade in" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-    </button>
-                        <strong>Hurry!</strong> Early bird registration ends in two days.
-                    </div>
                     <form>
-                        <h5 class="m-b-2">Basic Info</h5>
+                        <h5 class="m-b-2">Chateau Doms</h5>
                         <fieldset class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" class="form-control" id="name">
                         </fieldset>
                         <fieldset class="form-group has-danger">
-                            <label for="mail" class="form-control-label">Email</label>
+                            <label for="mail" class="form-control-label">Contactez Nous</label>
                             <input type="email" class="form-control form-control-danger" id="mail">
                         </fieldset>
                         <fieldset class="form-group">
-                            <label for="role">Job Role</label>
+                            <label for="role">Cest la quelle de la suite qui vous intereste la plus </label>
                             <select class="c-select form-control" id="role" name="user_role">
-             <option value="full stack js developer">Full Stack JavaScript Developer</option>
-                <option value="front end developer">Front End Developer</option>
-                <option value="back end developer">Back End Developer</option>
-                <option value="designer">Designer</option>
-                <option value="student">Student</option>
+             <option value="full stack js developer">Du Vin</option>
+                <option value="front end developer">Tour de la domaine</option>
+                <option value="back end developer">Export du Vin </option>
+                <option value="designer">Organizez a rendevous</option>
+                <option value="student">Contactez La Propieter </option>
 
         </select>
                         </fieldset>
 
-                        <hr class="m-y-2">
-                        <h5 class="m-b-2">Which Topics Interest You Most?</h5>
 
-                        <div class="form-group custom-controls-stacked">
-                            <label class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input">
-      <span class="custom-control-indicator"></span>
-      <span class="custom-control-description">JavaScript Frameworks</span>
-    </label>
-                            <label class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input">
-      <span class="custom-control-indicator"></span>
-      <span class="custom-control-description">JavaScript Librarys</span>
-    </label>
-                            <label class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input">
-      <span class="custom-control-indicator"></span>
-      <span class="custom-control-description">Node.js</span>
-    </label>
-                            <label class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input">
-      <span class="custom-control-indicator"></span>
-      <span class="custom-control-description">Build Tools</span>
-    </label>
-                            <label class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input">
-      <span class="custom-control-indicator"></span>
-      <span class="custom-control-description">Es 2015</span>
-    </label>
-                        </div>
+
+
+
 
                         <hr class="m-b-2">
 
@@ -281,9 +249,15 @@
 
     <!--/ End of contact  modal form-->
 
-    <!--button trigger for La Graves Rouge-->
 
-    <div id="legraves" class="modal fade">
+
+    <!--==============================
+         MODAL FOR LA GRAVES ROUGE
+    ===============================-->
+
+<!--button trigger for La Graves Rouge-->
+
+    <div id="legraves" class="modal fade text-xs-center">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-info">
@@ -299,57 +273,8 @@
                 <!-- End of button trigger for La Graves Rouge-->
 
                 <form>
-                    <img src="img/vinrouge.jpg" class="img-fluid center-block">
-                    <hr class="m-b-2">
-                    <h5 class="m-b-2">Payment Info</h5>
+                    <img src="img/vinrouge.jpg" class="img-fluid">
 
-                    <div class="row">
-                        <div class="col-lg-6 form-group has-success">
-                            <label class="from-control-label p-l-0" for="cc-num">Card Number:</label>
-                            <input class="form-control form-control-success" id="cc-num" type="text">
-                        </div>
-
-                        <div class="col-lg-3 form-group">
-                            <label for="zip">Code Postal:</label>
-                            <input class="form-control" id="zip" type="text">
-                        </div>
-
-                        <div class="col-lg-3 form-group">
-                            <label for="cvv">CVV:</label>
-                            <input class="form-control" id="cvv" type="text">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label class="col-lg-12">Expiration Date:</label>
-
-                        <div class="col-lg-8 form-group">
-                            <select class="c-select form-control" id="exp-month">
-        <option value="1">1 - January</option>
-        <option value="2">2 - February</option>
-        <option value="3">3 - March</option>
-        <option value="4">4 - April</option>
-        <option value="5">5 - May</option>
-        <option value="6">6 - June</option>
-        <option value="7">7 - July</option>
-        <option value="8">8 - August</option>
-        <option value="9">9 - September</option>
-        <option value="10">10 - October</option>
-        <option value="11">11 - November</option>
-        <option value="12">12 - December</option>
-         </select>
-
-                        </div>
-                        <div class="col-lg-4 form-group">
-                            <select class="custom-select form-control" id="exp-year">
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-          <option value="2020">2020</option>
-        </select>
-                        </div>
-                    </div>
                 </form>
 
                 <!--/registration form-->
@@ -362,7 +287,11 @@
     </div>
     <!-- /.modal -->
 
-    <!--button trigger for La Graves Rouge Cuvée Amélie -->
+    <!--==============================
+         MODAL FOR LE GRAVES CUVÉE
+    ===============================-->
+
+      <!--button trigger for Le Graves Rouge Cuvée Amélie -->
 
     <div id="legravescuvée" class="modal fade">
         <div class="modal-dialog modal-lg" role="document">
@@ -377,60 +306,11 @@
                 <div class="modal-body">
 
 
-                <!-- End of button trigger for La Graves Rouge Cuvée Amélie-->
+                <!-- End of button trigger for Le Graves Rouge Cuvée Amélie-->
 
                 <form>
-                    <img src="img/vinrouge2.jpg" class="img-fluid center-block">
-                    <hr class="m-b-2">
-                    <h5 class="m-b-2">Payment Info</h5>
+                    <img src="img/vinrouge2.jpg" class="img-fluid">
 
-                    <div class="row">
-                        <div class="col-lg-6 form-group has-success">
-                            <label class="from-control-label p-l-0" for="cc-num">Card Number:</label>
-                            <input class="form-control form-control-success" id="c-num" type="text">
-                        </div>
-
-                        <div class="col-lg-3 form-group">
-                            <label for="zip">Code Postal:</label>
-                            <input class="form-control" id="post" type="text">
-                        </div>
-
-                        <div class="col-lg-3 form-group">
-                            <label for="cvv">CVV:</label>
-                            <input class="form-control" id="secure" type="text">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label class="col-lg-12">Expiration Date:</label>
-
-                        <div class="col-lg-8 form-group">
-                            <select class="c-select form-control" id="ex-month">
-        <option value="1">1 - January</option>
-        <option value="2">2 - February</option>
-        <option value="3">3 - March</option>
-        <option value="4">4 - April</option>
-        <option value="5">5 - May</option>
-        <option value="6">6 - June</option>
-        <option value="7">7 - July</option>
-        <option value="8">8 - August</option>
-        <option value="9">9 - September</option>
-        <option value="10">10 - October</option>
-        <option value="11">11 - November</option>
-        <option value="12">12 - December</option>
-         </select>
-
-                        </div>
-                        <div class="col-lg-4 form-group">
-                            <select class="custom-select form-control" id="ex date">
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-          <option value="2020">2020</option>
-        </select>
-                        </div>
-                    </div>
                 </form>
 
                 <!--/registration form-->
@@ -444,6 +324,115 @@
     <!-- /.modal -->
 
 
+   <!--==============================
+      LE VIN BLANC
+    ===============================-->
+
+
+    <!--button trigger for La Vin Blanc-->
+
+    <div id="vinblanc" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    <h4 class="modal-title">Le Grave Rouge</h4>
+
+                </div>
+                <div class="modal-body">
+
+
+                <!-- End of button trigger for La Graves Rouge-->
+
+                <form>
+                    <img src="img/vinrouge.jpg" class="img-fluid">
+                                    </form>
+
+                <!--/registration form-->
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+    <!--==============================
+        LE BORDEAUX ROUGE
+    ===============================-->
+
+  <!--button trigger for La Bordeaux Rouge -->
+
+    <div id="bordeauxrouge" class="modal fade">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    <h4 class="modal-title">Le Graves Rouge Cuvée Amélie</h4>
+
+                </div>
+                <div class="modal-body">
+
+
+                <!-- End of button trigger for La Vin Blanc-->
+
+                <form>
+                    <img src="img/vinrouge2.jpg" class="img-fluid">
+                              </form>
+
+                <!--/registration form-->
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--==============================
+       LE ROSÉ DE DOMS
+     ===============================-->
+
+
+   <!--button trigger for La Bordeaux Rouge -->
+
+     <div id="rosedoms" class="modal fade">
+         <div class="modal-dialog modal-lg" role="document">
+             <div class="modal-content">
+                 <div class="modal-header bg-info">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+                     <h4 class="modal-title">Le Graves Rouge Cuvée Amélie</h4>
+
+                 </div>
+                 <div class="modal-body">
+Le domaine
+
+
+                 <!-- End of button trigger for La Vin Blanc-->
+
+                 <form>
+                     <img src="img/vinrose.jpg" class="img-fluid">
+
+                 </form>
+
+                 <!--/registration form-->
+             </div>
+
+         </div>
+         <!-- /.modal-content -->
+     </div>
+     <!-- /.modal-dialog -->
+     </div>
+     <!-- /.modal -->
 
 
 
@@ -451,9 +440,10 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    <script src="/bower_components/jquery/dist/jquery.min.js">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/parallax.js/parallax.min.js">
     </script>
     <script src="js/app.js">

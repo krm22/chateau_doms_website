@@ -1,0 +1,169 @@
+// add your custom styles here
+// to learn more about SASS, visit sass-lang.com
+body {
+    background: url('/img/vignes.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+}
+
+/*==========================================
+NAVBAR
+===========================================*/
+
+.navbar {
+    height: 10%;
+}
+
+ .navbar-brand{
+    font-size: 2em;
+    color: #989494;
+}
+
+.navbar li a{
+    font-size: 1.8em;
+}
+
+.btncontact{
+  border: transparent;
+}
+
+.navbar-nav {
+	margin:0;
+}
+.navbar-nav>li {
+	float:none;
+    display:inline-block;
+}
+.navbar-nav>li>a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+  /*==========================================
+
+  ===========================================*/
+
+
+
+
+.entete {
+    padding-bottom: 400px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.terroir {
+    background-image: url("/img/terroir1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(141, 0, 81);
+}
+
+.terroirh1 {
+    margin-bottom: 40px;
+}
+
+.terroir p {
+    font-weight: bold;
+}
+
+h1, h5, h4 {
+    text-align: center;
+}
+
+.lesvins {
+    background:white;
+}
+
+.lesvinsh1 {
+    color: white;
+    margin-bottom: 60px;
+}
+
+.vinrouge {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.vinrouge2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.vinblanc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.vinbdx {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.vinrose {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.chais {
+    background: url('/img/chais1.jpg');
+    color: white;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row2 {
+    margin-top: 40px;
+}
+
+
+
+/*==========================================
+MEDIA QUERIES
+===========================================*/
+// Extra small devices (portrait phones, less than 544px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 544px and up)
+@media (max-width: 544px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+
+ li {display:none;}
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+
+
+}
